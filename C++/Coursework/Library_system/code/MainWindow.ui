@@ -1,0 +1,3946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1135</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">  background-color: #4B4E5A;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget_user_biblotekor">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1111</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget {
+    background-color: #333333;
+  border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+QTabWidget::pane {
+    border: none;
+}
+
+
+QTabBar::tab {
+    background-color: #555555;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #666666;
+}
+
+QTabBar::tab:hover {
+    background-color: #444444;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_Librarian">
+     <attribute name="title">
+      <string>Librarian</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget {
+    background-color: #333333;
+  border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QTabWidget::pane {
+    border: none;
+}
+
+QTabBar::tab {
+    background-color: #555555;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #666666;
+}
+
+QTabBar::tab:hover {
+    background-color: #444444;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_books_Librarian">
+       <attribute name="title">
+        <string>Books</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>741</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #333333;
+    border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #555555;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #666666;
+}
+
+QTableWidget::item:focus {
+    background-color: #444444;
+}
+</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Genre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Year</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Count</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="pushButton_add_book">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>520</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Add a book</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>260</y>
+          <width>431</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    
+	background-color: rgb(51, 51, 51);
+	 border: 2px solid rgb(33, 17, 17) ;
+}
+</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_input_title_book">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>10</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_autho_book">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>50</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_genre_book">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_page_book">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>170</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_count_book">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>210</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+	background-color: rgb(59, 89, 152);
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title of the book</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Author of the book</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Genre of the book</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Number of pages</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>How much to add</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Year of the book</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_year_book">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>130</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_deleted_book">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>520</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Deleted a book</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>560</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_6" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>260</y>
+          <width>301</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    
+	background-color: rgb(51, 51, 51);
+	 border: 2px solid rgb(33, 17, 17) ;
+}
+</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_filter_title">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>50</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_autho">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>90</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_genre">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>130</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_page">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>210</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+	background-color: rgb(59, 89, 152);
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_17">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Genre </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_18">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_20">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Year </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_year">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>170</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_19">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>10</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+	background-color: rgb(59, 89, 152);
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Filter Books</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_filter_book">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>520</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_reset_filter">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>520</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Rent_Librarian">
+       <attribute name="title">
+        <string>Rent</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_reader_book_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>741</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #333333;
+    border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #555555;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #666666;
+}
+
+QTableWidget::item:focus {
+    background-color: #444444;
+}
+</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Reader</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Data rent</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Genre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Year</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Count</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Readers</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_readers">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>741</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #333333;
+    border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #555555;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #666666;
+}
+
+QTableWidget::item:focus {
+    background-color: #444444;
+}
+</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Count rent books</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>40</y>
+        <width>331</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    border: 2px solid rgb(33, 17, 17);
+    background-color: rgb(51, 51, 51);
+}
+
+QWidget &gt; * {
+    border: none;
+}
+</string>
+      </property>
+      <widget class="QTabWidget" name="tabWidget_log_reg_Libr">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>321</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Trebuchet MS</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabWidget {
+    background-color: #333333;
+  border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+    background-color: #4B4E5A;
+}
+
+QTabBar::tab {
+	background-color: rgb(80, 80, 80);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    min-width: 80px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+    color: #4B4E5A;
+}
+
+QTabBar::tab:hover {
+    background-color: rgb(117, 122, 140)
+}
+
+QTabWidget::pane {
+    border: none;
+    background-color: #333333;
+}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Login</string>
+        </attribute>
+        <widget class="QLabel" name="Login_Librarian">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>240</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Password_Librarian_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>340</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Password</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_login">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>290</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_password">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>390</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_input_acc">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>450</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Log in to your account</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>70</y>
+           <width>251</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+    
+	background-color: rgb(51, 51, 51);
+	 border: 2px solid rgb(33, 17, 17) ;
+}
+</string>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>251</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Trebuchet MS</family>
+            <pointsize>15</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(51, 51, 51,10);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Welcome!
+If you are not registered
+before, contact the
+administrator</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Register</string>
+        </attribute>
+        <widget class="QLabel" name="Login_Librarian_8">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>200</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Password_Librarian_4">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>280</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Password</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Password_Librarian_5">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>360</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Repeat the password</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_log">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>240</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_pass">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>320</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_pass_repit">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>400</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_reg_acc">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>460</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Registration</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_name">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>40</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_log_name">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>80</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_phone">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>160</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_name_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>120</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Phone</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>10</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 51, 51,99);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Status: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>10</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 61, 61);
+background-color: rgb(51, 51, 51,99);</string>
+      </property>
+      <property name="text">
+       <string>User offline</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_Rent_reader">
+     <attribute name="title">
+      <string>Reader</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget {
+    background-color: #333333;
+  border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QTabWidget::pane {
+    border: none;
+}
+
+QTabBar::tab {
+    background-color: #555555;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #666666;
+}
+
+QTabBar::tab:hover {
+    background-color: #444444;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_books_Reader">
+       <attribute name="title">
+        <string>Books</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_reader_book">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>731</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #333333;
+    border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #555555;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #666666;
+}
+
+QTableWidget::item:focus {
+    background-color: #444444;
+}
+</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Genre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Year</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Count</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>350</y>
+          <width>341</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background-color: #333333;
+	 border: 2px solid rgb(33, 17, 17) ;
+}
+</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_input_count_rent_book">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_rent_book">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>100</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Rent a book</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Enter the number of books</string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>50</y>
+           <width>121</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QDateEdit {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QDateEdit  {
+   background-color: #4B4E5A;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Enter by what date you
+wil lhave the book</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_10" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>240</y>
+          <width>301</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    
+	background-color: rgb(51, 51, 51);
+	 border: 2px solid rgb(33, 17, 17) ;
+}
+</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_filter_title_4">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>50</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_autho_4">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>90</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_genre_4">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>130</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_page_4">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>210</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_33">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+	background-color: rgb(59, 89, 152);
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_34">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_35">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Genre </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_36">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_37">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Year </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filter_year_4">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>170</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_38">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>10</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+	background-color: rgb(59, 89, 152);
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Filter Books</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_filter_book_redear">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>500</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_reset_filter_reader">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>500</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Rent_Reader">
+       <attribute name="title">
+        <string>Rent</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_reader_book_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>741</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #333333;
+    border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #555555;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #666666;
+}
+
+QTableWidget::item:focus {
+    background-color: #444444;
+}
+</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Data rent</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Genre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Year</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Count</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="widget_7" native="true">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>450</y>
+          <width>361</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    
+	background-color: rgb(51, 51, 51);
+	 border: 2px solid rgb(33, 17, 17) ;
+}
+</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_return_book">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_14">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+	background-color: rgb(59, 89, 152);
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>How many books to return</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_return_book">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>50</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Return the book(s)</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>40</y>
+        <width>321</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #333333;
+}
+</string>
+      </property>
+      <widget class="QTabWidget" name="tabWidget_log_reg_Libr_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>321</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabWidget {
+    background-color: #4B4E5A;
+    border: none;
+    font-size: 14px;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+    background-color: #4B4E5A;
+}
+
+QTabBar::tab {
+    background-color: #4B4E5A;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    min-width: 80px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+    color: #4B4E5A;
+}
+
+QTabBar::tab:hover {
+    background-color: rgb(117, 122, 140)
+}
+
+QTabWidget::pane {
+    border: none;
+    background-color: #333333;
+}
+</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_7">
+        <attribute name="title">
+         <string>Login</string>
+        </attribute>
+        <widget class="QLabel" name="Login_Librarian_11">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>90</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Password_Librarian_8">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>210</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Password</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_login_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>150</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_password_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>270</y>
+           <width>251</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_input_acc_reader">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>380</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Log in to your account</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line_3">
+         <property name="geometry">
+          <rect>
+           <x>-3</x>
+           <y>470</y>
+           <width>331</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>20</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>70</y>
+           <width>271</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_6">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>90</y>
+           <width>20</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_5">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>310</y>
+           <width>251</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_8">
+        <attribute name="title">
+         <string>Register</string>
+        </attribute>
+        <widget class="QLabel" name="Login_Librarian_12">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>190</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Password_Librarian_9">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>270</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Password</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Password_Librarian_10">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>350</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Repeat the password</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_log_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>230</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_pass_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>310</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_pass_repit_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>390</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_reg_acc_reader">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>440</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #404040;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Registration</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_name_5">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_log_name_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>70</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_input_reg_phone_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>150</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #4B4E5A;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+QLineEdit:hover {
+    border: 1px solid #3b3e47;
+}
+QLineEdit:focus {
+    border: 1px solid #3b3e47;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Login_Librarian_name_6">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>110</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Trebuchet MS</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #D9DCE4;
+    background-color: #3B5998;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Phone</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line_7">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>30</y>
+           <width>20</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>420</y>
+           <width>291</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_9">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>31</y>
+           <width>20</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_10">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>10</y>
+           <width>281</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>530</y>
+         <width>321</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 51, 51,99);
+color: rgb(243, 243, 243);</string>
+      </property>
+      <property name="text">
+       <string>Status: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>10</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 61, 61);
+background-color: rgb(51, 51, 51,99);</string>
+      </property>
+      <property name="text">
+       <string>User offline</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Admin</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_admin_panel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1091</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #333333;
+    border: 2px solid rgb(33, 17, 17);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #555555;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #666666;
+}
+
+QTableWidget::item:focus {
+    background-color: #444444;
+}
+</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Phone</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1135</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

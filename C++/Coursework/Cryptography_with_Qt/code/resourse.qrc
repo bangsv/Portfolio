@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/MainPiNew.png</file>
+        <file>img/MainPiNew.ico</file>
+    </qresource>
+</RCC>

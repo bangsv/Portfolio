@@ -1,0 +1,22 @@
+Title	Author	Genre	year	Number of pages	Count
+To kill a Mockingbird	Harper Lee	Novel	1960	216	61
+1984	George Orwell	Novel	1949	194	50
+Harry Potter and the Philosopher's Stone	J. K. Rowling	Novel	2001	321	41
+Rain	Nikolay Malunov	Combat	2005	374	33
+Kolobok	Tolstoy A. N.	Story	1910	79	94
+Conduit and Schwambrania	Lev Kassil	Adventures	1931	321	43
+Valkyrie's Treasures: Standing by the Sun	Sergey Alekseev	Adventures	1995	213	36
+Encyclopedia of Serial Killers	Harold Schechter	Adventures	1998	264	64
+The Mute witness	Agatha Christie	Classic	1936	312	66
+Empty house	Arthur Conan Doyle	Classic	1903	241	83
+The World of the Bell	Koji Suzuki	Horrors	2007	198	48
+Blacksad. The Northern Nation	Juanjo Guarnido	Comics	1950	95	121
+The walking dead. Volume 1. Days gone by	Robert Kirkman	Comics	2004	132	87
+Naruto. Book 21. I won't forgive you!	Masashi Kishimoto	Comics	2004	212	65
+Girl without dowry	Alexander Ostrovsky	Novel	1878	348	144
+Salome	Oscar Wilde	Novel	1891	297	129
+Servant of Evil	Howard Lovecraft	Horrors	1939	426	47
+The game of invisibility	Роберт Стайн	Horrors	1993	385	127
+Survive with wolves	Misha Defonseka	Combat	2009	264	107
+Forty-first	Boris Andreevich Lavrenev	Combat	1924	249	129
+New book	New book	New book	123	123	132

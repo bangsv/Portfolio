@@ -1,0 +1,12 @@
+Reader	Data	rent	Title	Author	Genre	Year	Pages	Count
+test	01.01.2000	1984	George Orwell	Novel	1949	194	1	
+Buttorma	21.04.2010	Forty-first	Boris Andreevich Lavrenev	Combat	1924	249	12	
+Buttorma	21.06.2012	The game of invisibility	Роберт Стайн	Horrors	1993	385	6	
+Buttorma	21.08.2016	Girl without dowry	Alexander Ostrovsky	Novel	1878	348	9	
+Dlaidal	16.06.2002	Harry Potter and the Philosopher's Stone	J. K. Rowling	Novel	2001	321	2	
+Dlaidal	16.08.2003	The Mute witness	Agatha Christie	Classic	1936	312	12	
+test	23.07.2001	Forty-first	Boris Andreevich Lavrenev	Combat	1924	249	2	
+test	23.07.2001	Delet this book for test 	The creator of this app	MY_GENRE	2023	900	3	
+test	23.07.2001	The game of invisibility	Роберт Стайн	Horrors	1993	385	1	
+test	23.07.2001	Salome	Oscar Wilde	Novel	1891	297	5	
+test	01.01.2000	Empty house	Arthur Conan Doyle	Classic	1903	241	1	

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpWindow</class>
+ <widget class="QWidget" name="HelpWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>51</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>515</width>
+    <height>511</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>515</width>
+    <height>511</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>515</width>
+    <height>511</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>515</width>
+    <height>511</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+ background-color: rgb(45, 45, 48);
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>491</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px;
+color: rgb(0, 0, 0);
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(220, 220, 220);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Create file - select/create a file, and immediately fill it with text through
+the opened window.
+Open file - opens a file for further work with it.
+File data - Displays file information on the screen.
+Delete - removes a file from the program's memory, thus making it
+impossible to work with it further.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>491</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px;
+color: rgb(0, 0, 0);
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(220, 220, 220);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Encoding tab:
+Operating instructions:
+1) Create/Open a data file.
+2) Select the desired cipher.
+3) Press the encoding button, after which the screen will show that the job
+is done.
+Note: 3.1) After clicking, a file with a key for further decryption will be created.
+3.2) A file will be created, the format previously selected for encryption,
+the file will contain encrypted text.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>491</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px;
+color: rgb(0, 0, 0);
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(220, 220, 220);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Decipher tab:
+Operating instructions:
+1) Select the appropriate decryptor for the encrypted file.
+2) Select the key created earlier by the program for the file.
+3) Select the encrypted file.
+4) Press the Decipher button, after which the screen
+will show that the job is done.
+ Note: 4.1) A file will be created in which the decrypted file will be written.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

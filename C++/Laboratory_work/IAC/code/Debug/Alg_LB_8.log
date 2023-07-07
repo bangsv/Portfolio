@@ -1,0 +1,5 @@
+﻿  SourceTable.cpp
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_8\Alg_LB_8\HeaderTable.h(13,2): warning C4091: typedef : пропускается слева от "List", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_8\Alg_LB_8\SourceTable.cpp(8,25): warning C4302: приведение типов: усечение из "void *" к "char"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_8\Alg_LB_8\SourceTable.cpp(8,41): warning C4302: приведение типов: усечение из "void *" к "char"
+  Alg_LB_8.vcxproj -> D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_8\Alg_LB_8\Debug\Alg_LB_8.exe

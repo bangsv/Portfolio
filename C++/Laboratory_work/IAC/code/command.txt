@@ -1,0 +1,11 @@
+IN a
+OUT a
+IN a
+IN b
+OUT b
+IN c
+OUT c
+MOVE c a
+ADD a b
+OUT a
+OUT q

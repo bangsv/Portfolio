@@ -1,0 +1,9 @@
+Status	Login	Password	Name	Phone
+librarian	Potato	123456789	Nika	7912323432
+librarian	Tomato	0987654321	Lera	6758768678
+reader	Juneeli	12345678	Anna	0
+reader	Vatone	87654321	Vatali	0
+reader	Dlaidal	qwertyui	Oliver 	0
+reader	Buttorma	asdfghjkl	Amelia 	0
+librarian	test	test	test	0
+reader	test	test	test	0
