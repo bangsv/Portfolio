@@ -1,4 +1,4 @@
-# Проведение тестирование программы
+# Тестирование и апробация
 
 <p align="center">
   <img src="https://github.com/bangsv/Portfolio/assets/97832253/01f5f8f3-59ad-4d16-8f55-eed658c9744e"/>
