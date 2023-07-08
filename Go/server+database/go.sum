@@ -1,0 +1,6 @@
+github.com/bangsv/my_lib_go v0.0.0-20230116175923-17363a416a03 h1:LmPVYa4ZLqvCJypNC10TknXSSzrkK07ID11CoNiSB3g=
+github.com/bangsv/my_lib_go v0.0.0-20230116175923-17363a416a03/go.mod h1:rsVxnV2b6SRKCOvKy08t+ZNgZoZCm5HACzbOcf/5g2k=
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/mattn/go-sqlite3 v1.14.16 h1:yOQRA0RpS5PFz/oikGwBEqvAWhWg5ufRz4ETLjwpU1Y=
+github.com/mattn/go-sqlite3 v1.14.16/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
